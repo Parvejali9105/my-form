@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+   
+</head>
+<body>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px 0 0px  0px;
+             box-sizing: border-box;
+             
+        }
+        body{
+            
+            background: linear-gradient(135deg, #14d8d8, #0a66f0);
+            
+           
+        }
+        .row{
+            display: inline-block;
+            width: 30%;
+        }
+        .container{
+        
+            background-color: rgba(227, 229, 233, 0.212);
+           
+            background:rgb(240, 234, 234);
+            border-radius: 3%;
+           
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+           
+            
+        }
+        .container01 {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 130px;
+           
+            width: 500px;
+           
+           
+        }
+        .input-box{
+          width: 330px;
+          height: 30px;
+          display: inline-block;
+            width: 65%;
+        
+        }
+        input, textarea{
+             text-transform: capitalize; 
+        }
+        textarea{
+            width: 330px;
+            height: 80px;
+        }
+        .submit{
+           
+            height: 50px;
+             position: center;  
+            width: 150px;
+           
+           }
+           @media (max-width: 500px) {
+            .row{
+            display: inline-block;
+            width: 30%;
+            font-size: 13px;
+            
+        }
+        .container{
+        
+       
+        border-radius: 3%;
+       
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+       }
+       .container01 {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+           
+            width: 300px;
+               
+           }  .input-box{
+          width: 60%;
+          height: 18%;
+           
+        
+        } input, textarea{
+             text-transform: capitalize; 
+        }
+         textarea{
+            width: 180px;
+            height: 50px;
+        }
+        .submit{
+           
+           height: 25px;
+           position: center; 
+           width: 80px;
+           border-radius: 20px;
+           text-align: center;
+          }
+          #head{
+              text-align: center;
+              font-size: 20px;
+          }
+           
+    </style>
+    <div>
+<div class="container">
+
+<div class="container01">
+    <h1 id="head">Add Address</h1>
+
+      
+      <div >
+        <span class="row" > Client Name</span>
+        <input type="text" name="ClientCode" value="abcd xyz" class="input-box" >
+     </div>
+
+     <div >
+        <span class="row"> Client Code</span>
+        <input type="text" name="ClientCode" value="cl12345" class="input-box" >
+      </div>
+
+       <div >
+        <span class="row" > Address</span>
+        <textarea class="addr"></textarea>
+      </div>
+
+     <div >
+         <span class="row">City</span>
+         <input type="text" name="City" class="input-box" required>
+     </div>
+   
+      <div >
+          <span class="row">State</span>
+          <input type="text" name="State" class="input-box" required>
+     </div>
+  
+     <div >
+         <span class="row">Zip code</span>
+         <input type="number" name="Zipcode"  class="input-box" required>
+     </div>
+  
+
+       <div  >
+        <center>  <input type="submit" name="submit" value="SUBMIT" class="submit" ></center>
+        
+       </div> 
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
